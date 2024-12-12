@@ -4,7 +4,9 @@ html, body {
 }
 
 body {
-  background-color: brown;
+  background: linear-gradient(to left, #87CEEB, #3434c0); 
+  height: 100vh; 
+  margin: 0;
 }
 
 .game {
@@ -15,9 +17,14 @@ body {
 }
 
 .factory {
-  background-color: rgb(255, 255, 255, 0.5);
+  background-color: rgba(99, 118, 227, 0.5);
+  border-radius: 15%;
   padding: 2em;
   margin: 2em;
+  text-align: center;
+  border: 2px solid blue;
+  width: 250px;
+  height: auto; 
 }
 
 .main-game {
@@ -25,13 +32,40 @@ body {
 }
 
 .main-game .click-zone {
-  background-color: red;
+  background: linear-gradient(to left, #46bc52, #9bc5a4);
+  border-radius: 15%; 
   width: 500px;
   height: 500px;
+  border: 2px solid rgb(11, 11, 95); 
   cursor: pointer;
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
 }
 
 .main-game .score {
   font-size: 2em;
   margin: 1em;
+}
+
+.click-zone {
+  cursor: url('img/cursor-1.png'), auto;
+}
+
+button {
+  background: linear-gradient(to left, #46bc52, #9bc5a4);
+  border: 2px solid green;
+  border-radius: 25px; 
+  width: 80%;
+  height: 100%;
+  padding: 5px;
+  color: white;
+}
+
+button:hover {
+  background: linear-gradient(to right, #46bc52, #9bc5a4);
+  color: rgb(11, 121, 73);
+  font-weight: bold;
+  font-size: 12px;
+  cursor: pointer;
 }
